@@ -21,7 +21,7 @@ jobs:
         run: npm install
       - name: Create a new Release
         if: github.event_name == 'push' && github.ref=='refs/heads/main'
-        uses: actions/create-release@v2
+        uses: actions/create-release@v1
         with:
           tag_name: ${{github.ref}}
           release_name: Release ${{github.ref}}

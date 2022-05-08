@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark m-0 p-0">
+  <div class="container-fluid justify-content-between">
+    <div class="">
+      <a routerLink="/" class="navbar-brand">
+        <img src="https://www.keycloak.org/resources/images/keycloak_logo_200px.svg" alt="" class="img-fluid w-100">
+      </a>
+    </div>
+
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item me-3 me-lg-2">
+        <a routerLink="configure" class="nav-link">Configuration</a>
+      </li>
+      <li class="nav-item me-3 me-lg-2">
+        <a routerLink="configure" class="nav-link">Management</a>
+      </li>
+      <li class="nav-item me-3 me-lg-2 h-100">
+        <button class="btn btn-sm btn-outline-success border-0" (click)="login()">Login</button>
+      </li>
+    </ul>
+  </div>
+</nav>

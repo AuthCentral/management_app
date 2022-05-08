@@ -20,7 +20,7 @@ jobs:
       - name: Install Node Packages
         run: npm install
       - name: Create a new Release
-        if: github.event_name == 'push' && github.ref='refs/heads/main'
+        if: github.event_name == 'push' && github.ref=='refs/heads/main'
         uses: actions/create-release@v2
         with:
           tag_name: ${{github.ref}}

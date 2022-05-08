@@ -4,7 +4,7 @@ jobs:
   pipeline:
     name: Management Application Pipeline
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[ci skip]'"
+    if: "!contains(github.event.head_commit.message, '[ci skip]')"
     timeout-minutes: 40
     env:
       NODE_VERSION: 16.14.0

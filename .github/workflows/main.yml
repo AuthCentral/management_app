@@ -13,10 +13,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16.14.0
-      - uses: actions/setup-java@v3
-        with:
-          distribution: 'temurin'
-          version: '17'
       - name: Install Node Packages
         run: npm install
       - name: Create a new Release
